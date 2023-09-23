@@ -1,0 +1,237 @@
+.about-me {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 50px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.about-me-title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+  font-weight: 500;
+  color: whitesmoke;
+
+  span {
+    color: rgba(0, 21, 255, 0.979);
+  }
+}
+
+.about-me-deatils-container {
+  display: flex;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  gap: 10px;
+}
+
+.profile-img {
+  height: 300px;
+  width: 300px;
+  background-image: url("/images/Marcel\ Wydrzyński.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  overflow: visible;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: whitesmoke;
+  width: 70%;
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  span {
+    color: rgba(69, 84, 248, 0.979);
+  }
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  h3 {
+    text-align: center;
+    font-size: 32px;
+    color: grey;
+  }
+  align-items: center;
+}
+
+.progrees-bars-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.progress-bar {
+  display: flex;
+  width: 80%;
+  height: 10%;
+  overflow: hidden;
+  animation: 2s forwards;
+
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+  }
+}
+
+.html-bar p:first-child,
+.css-bar p:first-child {
+  width: 25%;
+  background-color: rgb(135, 134, 134);
+  margin-right: 15px;
+  border-radius: 20px;
+  color: white;
+}
+
+.html-bar p:nth-child(2),
+.css-bar p:nth-child(2) {
+  width: 55%;
+  background-color: rgba(0, 60, 255, 0.979);
+  border-radius: 15px  0 0 15px;
+}
+.html-bar p:nth-child(3),
+.css-bar p:nth-child(3) {
+  width: 15%;
+  background-color: rgba(140, 140, 140, 0.407);
+  border-radius: 0 15px 15px 0;
+}
+
+.javascript-bar p:first-child,
+.sass-bar p:first-child {
+  width: 25%;
+  background-color: rgb(135, 134, 134);
+  margin-right: 15px;
+  border-radius: 20px;
+  color: white;
+}
+
+.javascript-bar p:nth-child(2),
+.sass-bar p:nth-child(2) {
+  width: 45%;
+  background-color: rgba(0, 60, 255, 0.979);
+}
+
+.javascript-bar p:nth-child(3),
+.sass-bar p:nth-child(3) {
+  width: 25%;
+  background-color: rgba(140, 140, 140, 0.407);
+  border-radius: 0 15px 15px 0;
+}
+
+.react-bar p:first-child {
+  width: 25%;
+  background-color: rgb(135, 134, 134);
+  margin-right: 15px;
+  border-radius: 20px;
+  color: white;
+}
+
+.react-bar p:nth-child(2) {
+  width: 2%;
+  background-color: rgba(0, 60, 255, 0.979);
+  border-radius: 15px  0 0 15px;
+}
+
+.react-bar p:nth-child(3) {
+  width: 68%;
+  background-color: rgba(140, 140, 140, 0.407);
+  i {
+    margin-left: 5px;
+    animation: loading 2s infinite linear forwards;
+  }
+  border-radius: 0 15px 15px 0;
+}
+
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1850px) {
+  .progress-bar {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+
+  .about-me {
+    width: 95%;
+  }
+  .about-me-deatils-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .profile-container {
+    width: 100%;
+
+    .profile-text {
+      width: 80%;
+    }
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .progrees-bars-container {
+    gap: 20px;
+
+    .progress-bar {
+    p {
+      padding: 5px 0;
+    }
+    }
+  }
+  .profile-img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .profile-text {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  
+    .progress-bar {
+    p {
+      font-size: 10px;
+    }
+    }
+  }
+
+
